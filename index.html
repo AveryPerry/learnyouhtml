@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<!-- Write comments like this -->
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Demo</title>
+</head>
+
+<body>
+    <header>
+        <h1>My <a href="https://github.com/denysdovhan/learnyouhtml?tab=readme-ov-file" target="_blank">learnyouhtml</a>
+        </h1>
+        <nav>
+            <ul> <!-- use href="#_" to link to id in same page  -->
+                <li><a href="#Hello World">Hello World</a></li>
+                <li><a href="#Tags">Tags</a></li>
+                <li><a href="#Attributes">Attributes</a></li>
+                <li><a href="#Inline Tags">Inline Tags</a></li>
+                <li><a href="#Headings">Headings</a></li>
+                <li><a href="#Lists">Lists</a></li>
+                <li><a href="#Tables">Tables</a></li>
+                <li><a href="#Blocks">Blocks</a></li>
+                <li><a href="#Links and References">Links and References</a></li>
+                <li><a href="#Forms">Forms</a></li>
+                <li><a href="#Styles and Scripts">Styles and Scripts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <!-- Hello World  -->
+        <article>
+            <section>
+                <h2 id="Hello World"><u>Hello World</u></h2>
+                <h3>Challenge:</h3>
+                <!-- use <pre> to preserve formating  -->
+                <p><b>
+                        <pre>
+                    Create a new empty file called index.html and put these lines in there:
+<!-- used https://emn178.github.io/online-tools/html_encode.html  -->
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;meta charset=&quot;utf-8&quot;&gt;
+                            &lt;title&gt;Hello, world!&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            here is a body
+                        &lt;/body&gt;
+                    &lt;/html&gt;
+                    </pre>
+                    </b></p>
+                <h3>Solution:</h3>
+                <pre><p>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                    &lt;head&gt;
+                        &lt;meta charset=&quot;utf-8&quot;&gt;
+                        &lt;title&gt;Hello, world!&lt;/title&gt;
+                    &lt;/head&gt;
+                    
+                    &lt;body&gt;
+                        here is a body
+                    &lt;/body&gt;
+                    
+                    &lt;/html&gt;             
+                    </p></pre>
+                <p><a href="HelloWorld.html" target="_blank"><u>Open Solution</u></a></p>
+                <!-- target="_blank" to open in new tab  -->
+            </section>
+            <hr>
+
+            <!-- Tags  -->
+            <section>
+                <h2 id="Tags"><u>Tags</u></h2>
+                <h3>Challenge:</h3>
+                <p><b>
+                        <pre>
+                    You already have an HTML-document. In &lt;body&gt; add two paragraphs (&lt;p&gt;) with any text you like. Please, separate these two tags with a horizontal rule (&lt;hr&gt; tag).
+                    </pre>
+                    </b></p>
+                <h3>Solution:</h3>
+                <pre><p>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                    &lt;head&gt;
+                        &lt;meta charset=&quot;utf-8&quot;&gt;
+                        &lt;title&gt;Hello, world!&lt;/title&gt;
+                    &lt;/head&gt;
+                    
+                    &lt;body&gt;
+                        &lt;p&gt;paragraph1&lt;/p&gt;
+                        &lt;hr&gt;
+                        &lt;p&gt;paragraph2&lt;/p&gt;
+                    &lt;/body&gt;
+                    
+                    &lt;/html&gt;            
+                    </p></pre>
+                <p><a href="Tags.html" target="_blank"><u>Open Solution</u></a></p>
+            </section>
+            <hr>
+
+            <!-- Attributes  -->
+            <section>
+                <h2 id="Attributes"><u>Attributes</u></h2>
+                <h3>Challenge:</h3>
+                <p><b>
+                    <pre>
+                    You&#39;re already familiar with the &lt;img&gt; tag from the previous exercise. This tag embeds an image in the page. This tag has a few important attributes:
+
+                    src - the image URL. This attribute is mandatory for the &lt;img&gt; element.
+                    alt - this attribute defines the alternative text describing the image. Users will see this text displayed if the image URL is wrong or if the image is not yet downloaded.
+                    height - the intrinsic height of the image in pixels.
+                    width - the intrinsic width of the image in pixels.
+                    You need to create an HTML document with an image. Feel free to set any values for src and alt attributes.
+                    </pre>
+                    </b></p>
+                <h3>Solution:</h3>
+                <pre><p>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                    &lt;head&gt;
+                      &lt;meta charset=&quot;utf-8&quot;&gt;
+                      &lt;title&gt;Attributes&lt;/title&gt;
+                    &lt;/head&gt;
+                    
+                    &lt;body&gt;
+                      &lt;img
+                        src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Glasto2023_%28149_of_468%29_%2853009108914%29_%28cropped%29.jpg/330px-Glasto2023_%28149_of_468%29_%2853009108914%29_%28cropped%29.jpg&quot;
+                        alt=&quot;Never Give up&quot;&gt;
+                    &lt;/body&gt;
+                    
+                    &lt;/html&gt;             
+                    </p></pre>
+                <p><a href="Attributes.html" target="_blank"><u>Open Solution</u></a></p>
+            </section>
+            <hr>
+
+            <!-- Inline Tags  -->
+            <section>
+                <h2 id="Inline Tags"><u>Inline Tags</u></h2>
+                <h3>Challenge:</h3>
+                <p><b>
+                    <pre>
+                    In this exercise you need to create 5 paragraphs of any text and use &lt;strong&gt;, &lt;em&gt;, &lt;sup&gt;, &lt;sub&gt; and &lt;span&gt; tag in these paragraphs, one tag per paragraph.
+                    </pre>
+                    </b></p>
+                <h3>Solution:</h3>
+                <pre><p>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                    &lt;head&gt;
+                      &lt;meta charset=&quot;utf-8&quot;&gt;
+                      &lt;title&gt;Hello, world!&lt;/title&gt;
+                    &lt;/head&gt;
+                    
+                    &lt;body&gt;
+                      &lt;p&gt;paragraph&lt;strong&gt;1&lt;/strong&gt;!&lt;/p&gt;
+                      &lt;p&gt;paragraph&lt;em&gt;2&lt;/em&gt;!&lt;/p&gt;
+                      &lt;p&gt;paragraph&lt;sup&gt;3&lt;/sup&gt;!&lt;/p&gt;
+                      &lt;p&gt;paragraph&lt;sub&gt;4&lt;/sub&gt;!&lt;/p&gt;
+                      &lt;p&gt;paragraph&lt;span&gt;5&lt;/span&gt;!&lt;/p&gt;
+                    &lt;/body&gt;
+                    
+                    &lt;/html&gt;         
+                    </p></pre>
+                <p><a href="InlineTags.html" target="_blank"><u>Open Solution</u></a></p>
+            </section>
+            <hr>
+
+            <!-- Headings  -->
+            <section>
+                <h2 id="Headings"><u>Headings</u></h2>
+                <h3>Challenge:</h3>
+                <p><b>
+                <pre>
+                    ## THE CHALLENGE
+
+                    You know how to create heading and paragraphs. Please, create a document
+                    with these structure:
+
+                    ─────────────────────────────────────────────────────────────────────────────
+
+                    # Heading elements
+
+                    ## Summary
+
+                    Some text here...
+
+                    ## Examples
+
+                    ### Example 1
+
+                    Some text here...
+
+                    ### Example 2
+
+                    Some text here...
+
+                    ## See also
+
+                    Some text here...
+            </pre>
+                    </b></p>
+                <h3>Solution:</h3>
+                <pre><p>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                    &lt;head&gt;
+                        &lt;meta charset=&quot;utf-8&quot;&gt;
+                        &lt;title&gt;Hello, world!&lt;/title&gt;
+                    &lt;/head&gt;
+                    
+                    &lt;body&gt;
+                        &lt;h1&gt;Heading elements&lt;/h1&gt;
+                        &lt;h2&gt;Summary&lt;/h2&gt;
+                        &lt;p&gt;Some text here...&lt;/p&gt;
+                        &lt;h2&gt;Examples&lt;/h2&gt;
+                        &lt;h3&gt;Example 1&lt;/h3&gt;
+                        &lt;p&gt;Some text here...&lt;/p&gt;
+                        &lt;h3&gt;Example 2&lt;/h3&gt;
+                        &lt;p&gt;Some text here...&lt;/p&gt;
+                        &lt;h2&gt;See Also&lt;/h2&gt;
+                        &lt;p&gt;Some text here...&lt;/p&gt;
+                    
+                    &lt;/body&gt;
+                    
+                    &lt;/html&gt;           
+                        </p></pre>
+                <p><a href="Headings.html" target="_blank"><u>Open Solution</u></a></p>
+            </section>
+            <hr>
+
+            <!-- Lists  -->
+            <section>
+                <h2 id="Lists"><u>Lists</u></h2>
+                <h3>Challenge:</h3>
+                <p><b>
+                    <pre>
+                    In your HTML document create three lists:
+
+                        1. ordered list with 3 items
+                        2. unordered list with 3 items
+                        3. definition list with 2 pairs of term and definition
+
+                    The content of list items is up to you.
+                    </pre>
+                    </b></p>
+                <h3>Solution:</h3>
+                <pre><p>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                    &lt;head&gt;
+                        &lt;meta charset=&quot;utf-8&quot;&gt;
+                        &lt;title&gt;Lists&lt;/title&gt;
+                    &lt;/head&gt;
+                    
+                    &lt;body&gt;
+                        &lt;ol reversed&gt;
+                            &lt;li&gt;Red&lt;/li&gt;
+                            &lt;li&gt;White&lt;/li&gt;
+                            &lt;li&gt;Blue&lt;/li&gt;
+                        &lt;/ol&gt;
+                    
+                        &lt;ul type=square&gt;
+                            &lt;li&gt;Cow&lt;/li&gt;
+                            &lt;li&gt;Sheep&lt;/li&gt;
+                            &lt;li&gt;Pig&lt;/li&gt;
+                        &lt;/ul&gt;
+                    
+                        &lt;dl&gt;
+                            &lt;dt&gt;Color:&lt;/dt&gt;
+                            &lt;dd&gt;The property possessed by an object of producing different
+                                sensations on the eye as a result of the way the object reflects
+                                or emits light.&lt;/dd&gt;
+                            &lt;dt&gt;Animal:&lt;/dt&gt;
+                            &lt;dd&gt;A living organism that feeds on organic matter, typically having
+                                specialized sense organs and nervous system and able to respond
+                                rapidly to stimuli.&lt;/dd&gt;
+                        &lt;/dl&gt;
+                    &lt;/body&gt;
+                    
+                    &lt;/html&gt;            
+                        </p></pre>
+                <p><a href="Lists.html" target="_blank"><u>Open Solution</u></a></p>
+            </section>
+            <hr>
+
+            <!-- Tables  -->
+            <section>
+                <h2 id="Tables"><u>Tables</u></h2>
+                <h3>Challenge:</h3>
+                <p><b>
+                    <pre>
+                    Create this table:
+
+                        ╔══════════╦══════════╦══════════╗
+                        ║  Europe  ║   Asia   ║  Africa  ║
+                        ╠══════════╬══════════╬══════════╣
+                        ║ Ukraine  ║ China    ║ Egypt    ║
+                        ╠══════════╬══════════╬══════════╣
+                        ║ Poland   ║ India    ║ Kenya    ║
+                        ╠══════════╬══════════╬══════════╣
+                        ║ Italy    ║ Thailand ║ Sudan    ║
+                        ╚══════════╩══════════╩══════════╝
+
+                    Above, first row is a heading row, so you should use &lt;th&gt; tag.
+                    </pre>
+                    </b></p>
+                <h3>Solution:</h3>
+                <pre><p>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;meta charset=&quot;utf-8&quot;&gt;
+                            &lt;title&gt;Tables&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            &lt;table&gt;
+                                &lt;tr&gt;
+                                    &lt;th&gt;Europe&lt;/th&gt;
+                                    &lt;th&gt;Asia&lt;/th&gt;
+                                    &lt;th&gt;Africa&lt;/th&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td&gt;Ukraine&lt;/td&gt;
+                                    &lt;td&gt;China&lt;/td&gt;
+                                    &lt;td&gt;Egypt&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td&gt;Poland&lt;/td&gt;
+                                    &lt;td&gt;India&lt;/td&gt;
+                                    &lt;td&gt;Kenya&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td&gt;Italy&lt;/td&gt;
+                                    &lt;td&gt;Thailand&lt;/td&gt;
+                                    &lt;td&gt;Sudan&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/table&gt;
+                        &lt;/body&gt;
+                    &lt;/html&gt;            
+                        </p></pre>
+                <p><a href="Tables.html" target="_blank"><u>Open Solution</u></a></p>
+            </section>
+            <hr>
+
+            <!-- Blocks  -->
+            <section>
+                <h2 id="Blocks"><u>Blocks</u></h2>
+                <h3>Challenge:</h3>
+                <p><b>
+                    <pre>
+                    Here you have a layout:
+                    <!-- had to replace box lines to display correctly -->
+                        ╔═════════════════════════════════════════════════════════╗
+                        ║ &lt;header&gt;        ┌─────────────────────────────────────┐ ║   
+                        ║                 │ &lt;nav&gt;                               │ ║
+                        ║                 │                      (3 menu items) │ ║
+                        ║                 └─────────────────────────────────────┘ ║
+                        ╠═════════════════════════════════════════════════════════╣
+                        ║ &lt;main&gt;                                                  ║
+                        ╠═════════════════════════════════════════════════════════╣
+                        ║║ &lt;article&gt;                           ║║ &lt;aside&gt;        ║║
+                        ║║┌───────────────────────────────────┐║║                ║║
+                        ║║│ &lt;section&gt;                         │║║ (3 menu items) ║║
+                        ║║│                                   │║║                ║║
+                        ║║│ (Heading 1)                       │║║                ║║
+                        ║║│                                   │║║                ║║
+                        ║║│ (A paragraph of text)             │║║                ║║
+                        ║║└───────────────────────────────────┘║║                ║║
+                        ║║┌───────────────────────────────────┐║║                ║║
+                        ║║│ &lt;section&gt;                         │║║                ║║
+                        ║║│                                   │║║                ║║
+                        ║║│ (Heading 2)                       │║║                ║║
+                        ║║│                                   │║║                ║║
+                        ║║│ (A paragraph of text)             │║║                ║║
+                        ║║│                                   │║║                ║║
+                        ║║└───────────────────────────────────┘║║                ║║
+                        ╠═════════════════════════════════════════════════════════╣
+                        ╠═════════════════════════════════════════════════════════╣
+                        ║ &lt;footer&gt;                                                ║
+                        ║ (A paragraph with copyright message.)                   ║
+                        ╚═════════════════════════════════════════════════════════╝
+
+                    Please, write corresponding markup for this layout
+                    </pre>
+                    </b></p>
+                <h3>Solution:</h3>
+                <pre><p>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                    &lt;head&gt;
+                        &lt;meta charset=&quot;utf-8&quot;&gt;
+                        &lt;title&gt;Blocks&lt;/title&gt;
+                    &lt;/head&gt;
+                    
+                    &lt;body&gt;
+                        &lt;header&gt;
+                            &lt;nav&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;Home&lt;/li&gt;
+                                    &lt;li&gt;About&lt;/li&gt;
+                                    &lt;li&gt;Contact&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/nav&gt;
+                        &lt;/header&gt;
+                        &lt;main&gt;
+                            &lt;article&gt;
+                                &lt;section&gt;
+                                    &lt;h1&gt;Heading1&lt;/h1&gt;
+                                    &lt;p&gt;This is paragraph one.&lt;/p&gt;
+                                &lt;/section&gt;
+                                &lt;section&gt;
+                                    &lt;h1&gt;Heading2&lt;/h1&gt;
+                                    &lt;p&gt;This is paragraph two.&lt;/p&gt;
+                                &lt;/section&gt;
+                            &lt;/article&gt;
+                            &lt;aside&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;Aside Number one&lt;/li&gt;
+                                    &lt;li&gt;Aside Number two&lt;/li&gt;
+                                    &lt;li&gt;Aside Number three&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/aside&gt;
+                        &lt;/main&gt;
+                        &lt;footer&gt;
+                            &lt;p&gt;This is the footer.&lt;/p&gt;
+                        &lt;/footer&gt;
+                        &lt;/main&gt;
+                    &lt;/body&gt;
+                    
+                    &lt;/html&gt;
+                <p><a href="Blocks.html" target="_blank"><u>Open Solution</u></a></p>
+            </section>
+            <hr>
+
+            <!-- Links and References  -->
+            <section>
+                <h2 id="Links and References"><u>Links and References</u></h2>
+                <h3>Challenge:</h3>
+                <p><b>
+                    <pre>
+                    In this exercise you have to create a clickable image (link with image).
+                    Use any image and any link you like.
+                    </pre>
+                </b></p>
+                <h3>Solution:</h3>
+                <pre><p>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                    &lt;head&gt;
+                      &lt;meta charset=&quot;utf-8&quot;&gt;
+                      &lt;title&gt;Links and References&lt;/title&gt;
+                    &lt;/head&gt;
+                    
+                    &lt;body&gt;
+                      &lt;a href=&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot; target=&quot;_blank&quot;&gt;
+                        &lt;img
+                          src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Glasto2023_%28149_of_468%29_%2853009108914%29_%28cropped%29.jpg/330px-Glasto2023_%28149_of_468%29_%2853009108914%29_%28cropped%29.jpg&quot;
+                          alt=&quot;Never Give up&quot;&gt;
+                      &lt;/a&gt;
+                    &lt;/body&gt;
+                    
+                    &lt;/html&gt;
+                <p><a href="LinksAndReferences.html" target="_blank"><u>Open Solution</u></a></p>
+            </section>
+            <hr>
+
+            <!-- Forms  -->
+            <section>
+                <h2 id="Forms"><u>Forms</u></h2>
+                <h3>Challenge:</h3>
+                <p><b>
+                    <pre>
+                    Create a form with two inputs (for login and password) and a submit
+                    button.
+                    </pre>
+                </b></p>
+                <h3>Solution:</h3>
+                <pre><p>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                    &lt;head&gt;
+                      &lt;meta charset=&quot;utf-8&quot;&gt;
+                      &lt;title&gt;Forms&lt;/title&gt;
+                    &lt;/head&gt;
+                    
+                    &lt;body&gt;
+                      &lt;form&gt;
+                        &lt;input type=&quot;text&quot;&gt;
+                        &lt;input type=&quot;password&quot;&gt;
+                        &lt;input type=&quot;submit&quot;&gt;
+                      &lt;/form&gt;
+                    &lt;/body&gt;
+                    
+                    &lt;/html&gt;            
+                        </p></pre>
+                <p><a href="Forms.html" target="_blank"><u>Open Solution</u></a></p>
+            </section>
+            <hr>
+
+            <!-- Styles and Scripts  -->
+            <section>
+                <h2 id="Styles and Scripts"><u>Styles and Scripts</u></h2>
+                <h3>Challenge:</h3>
+                <p><b>
+                    <pre>
+                    Create a web page with one inline style, one linked stylesheet and one
+                    inline script or one referenced script.
+                    </pre>
+                    </b></p>
+                <h3>Solution:</h3>
+                <pre><p>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                    &lt;head&gt;
+                      &lt;meta charset=&quot;utf-8&quot;&gt;
+                      &lt;title&gt;Styles and Scripts&lt;/title&gt;
+                      &lt;style type=&quot;text/css&quot;&gt;
+                        body {
+                          color: red;
+                        }
+                      &lt;/style&gt;
+                      &lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot;&gt;
+                    &lt;/head&gt;
+                    
+                    &lt;body&gt;
+                      &lt;script&gt;
+                        console.log(&apos;Hello, world!&apos;);
+                      &lt;/script&gt;
+                    &lt;/body&gt;
+                    
+                    &lt;/html&gt;          
+                        </p></pre>
+                <p><a href="StylesAndScripts.html" target="_blank"><u>Open Solution</u></a></p>
+            </section>
+            <hr>
+
+
+
+    </main>
+    <footer>
+        <p>Completed Day 2.</p>
+    </footer>
+</body>
+
+</html>
